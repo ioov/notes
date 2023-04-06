@@ -60,7 +60,7 @@
 			loadNavbar: true,       //顶部导航栏
 			coverpage: true,        //封面
 			onlyCover: true, 		// 只显示封面
-			subMaxLevel: 3,			//左侧导航菜单的最大层级
+			subMaxLevel: 4,			//左侧导航菜单的最大层级
 			maxLevel: 6,			//生成文档内容导航目录的最大层级
 			auto2top: true,			//url 改变时自动滚动到屏幕上方
 			mergeNavbar: true,		//小屏时，顶部导航栏内容将自动合并进左侧菜单栏
@@ -69,9 +69,9 @@
 			// relativePath: true,		//是否启用相对路径
 			// routerMode: 'history',     //路由模式
 			// nameLink: '/', 		//点击文档标题后跳转的链接地址。
-			// logo: "./images/fish.png",	//logo，出现在侧边导航栏顶部，可以通过 css 调整它。	//logo 和 name 只能保留一个
-			name: '渔泡笔记',					//出现在侧边栏顶部，可以用 HTML 元素包裹。    	//logo 和 name 只能保留一个
-			// repo: 'https://github.com/sooip',		//右上角git图标链接		
+			logo: "./images/fish.png",	//logo，出现在侧边导航栏顶部，可以通过 css 调整它。	//logo 和 name 只能保留一个
+			name: 'Yopao',					//出现在侧边栏顶部，可以用 HTML 元素包裹。    	//logo 和 name 只能保留一个
+			repo: 'https://github.com/sooip',		//右上角git图标链接		
 			count: { countable: true, fontsize: '0.9em', color: 'rgb(90,90,90)', language: 'chinese' },
 			search: {
 				noData: {
@@ -103,7 +103,8 @@
 	<!-- load script -->
 	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/docsify/4.11.2/docsify.min.js"></script> -->
 	<script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.11.2/docsify.js"></script>
-
+	<!-- 添加一键拷贝代码-->
+	<script src="//unpkg.com/docsify-copy-code"></script></script>
 	<!-- 图片缩小方法-->
 	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 	<!-- 引入搜索模块 -->

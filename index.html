@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="渔泡笔记，面试突击宝典">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<meta name="keywords" content="渔泡,博客,笔记,文档,前端技术,Web,笔记文档,博客文档,渔泡圈,渔泡博客,渔泡笔记,笔记社区,IT笔记,技术笔记,JavaScript技术分享,vue教程,前端框架,React教程,开发者社区">
+	<meta property="og:locale" content="zh_CN">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="渔泡笔记 - 专注于技术分享的笔记平台">
+	<meta property="og:description" content="一个专注于技术分享的笔记平台">
+	<meta property="og:url" content="https://note.sooi.top/">
+	<meta property="og:site_name" content="渔泡笔记">
+	<meta name="twitter:description" content="一个专注于技术分享的笔记平台">
+	<meta name="twitter:title" content=">渔泡笔记 - 专注于技术分享的笔记平台">
+	<!-- 谷歌站点收录 -->
+	<!-- <meta name="google-site-verification" content="5MIL8-R4rWA35AFheOm-WnS0vfY1g3YjfvMw_30GMlU" /> -->
+	<meta name="google-site-verification" content="TmPw9KlaFWNH51P5nmAZBuDfJJDdvx9E9DmA8P4VUC0" />
+	<!-- 必应站点收录-->
+	<meta name="msvalidate.01" content="1367C5E69A94C056D1FC28A03503A07E" />
+	<!-- 百度站点收录-->
+	<!-- <meta name="baidu-site-verification" content="62a2551808e2db0720c76980f250628a" /> -->
+	<meta name="baidu-site-verification" content="codeva-ltbNrUBtf0" />
+	<!-- 搜狗站点收录 -->
+	<meta name="sogou_site_verification" content="SNsk0hXZBj" />
+	<!-- 360站点收录 -->
+	<meta name="360-site-verification" content="084a3ed10c0518ccd34589d1e0152bfa" />
+	<link rel="shortcut icon" href="./images/fish.png">
+	<title>渔泡笔记</title>
+	<!-- load css -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"> -->
+	<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<style>
+	[alt="Yopao"] {
+		max-width: 18%;
+	}
+
+	/*全局滚动条样式*/
+	body::-webkit-scrollbar {
+		width: 5px;
+		height: 14px;
+	}
+
+	body::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: #b6b6b6;
+	}
+
+	/*全局滚动条样式结束*/
+</style>
+
+<body>
+	<div id="app">加载中，请稍等···</div>
+	<script>
+		window.$docsify = {
+			loadSidebar: true,      //侧部导航栏
+			loadNavbar: true,       //顶部导航栏
+			coverpage: true,        //封面
+			onlyCover: true, 		// 只显示封面
+			subMaxLevel: 3,			//左侧导航菜单的最大层级
+			maxLevel: 6,			//生成文档内容导航目录的最大层级
+			auto2top: true,			//url 改变时自动滚动到屏幕上方
+			mergeNavbar: true,		//小屏时，顶部导航栏内容将自动合并进左侧菜单栏
+			// homepage: "home.md",	//自定义主页，默认为README.md。
+			// basePath: "https://note.sooi.top/",		//网站的基础路径
+			// relativePath: true,		//是否启用相对路径
+			// routerMode: 'history',     //路由模式
+			// nameLink: '/', 		//点击文档标题后跳转的链接地址。
+			// logo: "./images/fish.png",	//logo，出现在侧边导航栏顶部，可以通过 css 调整它。	//logo 和 name 只能保留一个
+			name: '渔泡笔记',					//出现在侧边栏顶部，可以用 HTML 元素包裹。    	//logo 和 name 只能保留一个
+			// repo: 'https://github.com/sooip',		//右上角git图标链接		
+			count: { countable: true, fontsize: '0.9em', color: 'rgb(90,90,90)', language: 'chinese' },
+			search: {
+				noData: {
+					'/': '没有结果!'
+				},
+				paths: 'auto',
+				placeholder: {
+					'/': '搜索'
+				}
+			},
+			// 文本高亮
+			'flexible-alerts': {
+				style: 'flat',
+				note: {
+					label: "信息"
+				},
+				tip: {
+					label: "提示"
+				},
+				warning: {
+					label: "注意"
+				},
+				attention: {
+					label: "切记"
+				}
+			},
+		}
+	</script>
+	<!-- load script -->
+	<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/docsify/4.11.2/docsify.min.js"></script> -->
+	<script src="https://cdn.bootcdn.net/ajax/libs/docsify/4.11.2/docsify.js"></script>
+
+	<!-- 图片缩小方法-->
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+	<!-- 引入搜索模块 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+	<!-- 添加一键拷贝代码-->
+	<script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+	<!-- 字数统计功能 -->
+	<script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+	<!-- 回到顶部功能 -->
+	<script src="https://cdn.jsdelivr.net/gh/forthespada/forthespada.github.io@master/plugin/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/forthespada/forthespada.github.io@master/plugin/jquery.goup.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$.goup({
+				trigger: 700,
+				bottomOffset: 20,
+				locationOffset: 8,
+				title: '',
+				titleAsText: true
+			});
+		});
+	</script>
+	<!-- 翻页插件 -->
+	<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?62a2551808e2db0720c76980f250628a";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+</body>
+
+</html>
